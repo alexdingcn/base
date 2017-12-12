@@ -21,11 +21,11 @@
                         </h3>
                     </div>
                     <notebook colspan="4">
-                        <page string="General Information">
+                        <page string="基本信息">
                             <group>
                                 <group>
                                     <field name="partner_id" readonly="1" required="0" groups="base.group_no_one"/>
-                                    <label for="street" string="Address"/>
+                                    <label for="street" string="地址"/>
                                     <div class="o_address_format">
                                         <field name="street" placeholder="Street..." class="o_address_street"/>
                                         <field name="street2" placeholder="Street 2..." class="o_address_street"/>

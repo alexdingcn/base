@@ -939,7 +939,7 @@ class TreeView(View):
 
 class Binary(http.Controller):
 
-    def placeholder(self, image='placeholder.png'):
+    def placeholder(self, image='placeholder.jpg'):
         addons_path = http.addons_manifest['web']['addons_path']
         return open(os.path.join(addons_path, 'web', 'static', 'src', 'img', image), 'rb').read()
 
@@ -1014,7 +1014,7 @@ class Binary(http.Controller):
         if content:
             image_base64 = base64.b64decode(content)
         else:
-            image_base64 = self.placeholder(image='placeholder.png')  # could return (contenttype, content) in master
+            image_base64 = self.placeholder(image='placeholder.jpg')  # could return (contenttype, content) in master
             headers = self.force_contenttype(headers, contenttype='image/png')
 
         headers.append(('Content-Length', len(image_base64)))

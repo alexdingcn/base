@@ -205,7 +205,7 @@ msgstr "默认纸张格式？"
 #: code:addons/report/static/src/xml/report.xml:12
 #, python-format
 msgid "Discard"
-msgstr "丢弃"
+msgstr "取消"
 
 #. module: report
 #: model:ir.model.fields,field_description:report.field_ir_qweb_field_barcode_display_name

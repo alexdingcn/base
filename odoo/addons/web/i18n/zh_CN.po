@@ -724,7 +724,7 @@ msgstr "停用技术功能"
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
 msgid "Discard"
-msgstr "丢弃"
+msgstr "取消"
 
 #. module: web
 #. openerp-web

@@ -30,10 +30,10 @@
 
         <!-- Basic Company  -->
         <record id="main_company" model="res.company">
-            <field name="name">My Company</field>
+            <field name="name">医伴金服</field>
             <field name="partner_id" ref="main_partner"/>
-            <field name="rml_header1">My Company Tagline</field>
-            <field name="currency_id" ref="base.EUR"/>
+            <field name="rml_header1">提供医疗行业金融解决方案</field>
+            <field name="currency_id" ref="base.CNY"/>
         </record>
 
         <record model="res.partner" id="base.partner_root">

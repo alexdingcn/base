@@ -1456,7 +1456,7 @@ msgstr "禁用自动播放"
 #: code:addons/website/static/src/js/website.seo.js:364
 #, python-format
 msgid "Discard"
-msgstr "丢弃"
+msgstr "取消"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.template_partner_comment

@@ -292,7 +292,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"[object with reference: %s - %s]"
+"[引用对象: %s - %s]"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_invoice_bba
@@ -17729,8 +17729,9 @@ msgid ""
 "- deletion: you may be trying to delete a record while other records still reference it\n"
 "- creation/update: a mandatory field is not correctly set"
 msgstr ""
-"该操作无法完成，可能是由于以下原因：\\n - 删除：您可能正试图删除一个记录，但是仍有其它记录引用到它 \\n - "
-"创建/更新：一个强制字段没有正确设置"
+"该操作无法完成，可能是由于以下原因：\n"
+"- 删除：仍有别的记录使用到它，无法删除\n"
+"- 创建/更新：必填字段没有正确设置"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_domain
@@ -20287,7 +20288,7 @@ msgstr "访问权和访问规则的测试 "
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_read_group
 msgid "test read_group"
-msgstr "测试-只读组"
+msgstr "测试只读组"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_assetsbundle

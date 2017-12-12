@@ -1214,7 +1214,7 @@ var FieldBinaryFile = FieldBinary.extend({
 
 var FieldBinaryImage = FieldBinary.extend({
     template: 'FieldBinaryImage',
-    placeholder: "/web/static/src/img/placeholder.png",
+    placeholder: "/web/static/src/img/placeholder.jpg",
     render_value: function() {
         var url = this.placeholder;
         if(this.get('value')) {

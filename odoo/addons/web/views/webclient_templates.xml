@@ -296,7 +296,7 @@
     </template>
     <template id="web.menu_secondary">
         <a class="o_sub_menu_logo" t-att-href="'/web/?debug' if debug else '/web'">
-            <span class="oe_logo_edit">Edit Company data</span>
+            <span class="oe_logo_edit">编辑公司信息</span>
             <img src='/web/binary/company_logo'/>
         </a>
         <div class="o_sub_menu_content">
@@ -311,9 +311,6 @@
                     </t>
                 </div>
             </t>
-        </div>
-        <div class="o_sub_menu_footer">
-            Powered by <a href="http://www.odoo.com" target="_blank"><span>Odoo</span></a>
         </div>
     </template>
     <template id="web.menu_secondary_submenu">

@@ -481,7 +481,7 @@ msgstr "说明"
 #: code:addons/website_slides/static/src/xml/website_slides.xml:72
 #, python-format
 msgid "Discard"
-msgstr "丢弃"
+msgstr "取消"
 
 #. module: website_slides
 #: model:slide.slide,description:website_slides.slide_2
