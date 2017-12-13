@@ -194,21 +194,21 @@ msgstr "没有已安装的应用"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:148
 #, python-format
 msgid "Odoo"
-msgstr "Odoo"
+msgstr "医伴"
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:179
 #, python-format
 msgid "Odoo Enterprise"
-msgstr "Odoo 企业版"
+msgstr "企业版"
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:156
 #, python-format
 msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgstr "医伴金服（上海）"
 
 #. module: web_settings_dashboard
 #. openerp-web

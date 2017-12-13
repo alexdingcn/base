@@ -8,10 +8,10 @@
             <field name="arch" type="xml">
                 <!-- add state field in header -->
                 <xpath expr="//header" position="inside">
-                    <button string="Send Reset Password Instructions"
+                    <button string="发送密码重置指令"
                                 type="object" name="action_reset_password"
                                 attrs="{'invisible': [('state', '!=', 'active')]}"/>
-                    <button string="Send an Invitation Email"
+                    <button string="发送邀请邮件"
                                 type="object" name="action_reset_password" context="{'create_user': 1}"
                                 attrs="{'invisible': [('state', '!=', 'new')]}"/>
                     <field name="state" widget="statusbar"/>
@@ -21,10 +21,10 @@
                     <div class="alert alert-success text-center o_form_header" attrs="{'invisible': [('signup_valid', '!=', True)]}">
                         <a class="close" data-dismiss="alert" href="#" aria-hidden="true">x</a>
                         <div attrs="{'invisible': [('state', '!=', 'active')]}">
-                            <strong>A password reset has been requested for this user. An email containing the following link has been sent:</strong>
+                            <strong>重置密码邮件已经发送。如需手工设置密码，点击以下链接:</strong>
                         </div>
                         <div attrs="{'invisible': [('state', '!=', 'new')]}">
-                            <strong>An invitation email containing the following subscription link has been sent:</strong>
+                            <strong>邀请邮件已经发送。如需手工设置密码，点击以下链接:</strong>
                         </div>
                         <div><field name="signup_url" widget="url"/></div>
                          <field name="signup_valid" invisible="1"/>

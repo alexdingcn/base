@@ -73,7 +73,7 @@ def serialize_exception(f):
             se = _serialize_exception(e)
             error = {
                 'code': 200,
-                'message': "Odoo Server Error",
+                'message': u'系统错误',
                 'data': se
             }
             return werkzeug.exceptions.InternalServerError(json.dumps(error))

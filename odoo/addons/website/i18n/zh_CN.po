@@ -2369,22 +2369,22 @@ msgstr ""
 #. module: website
 #: model:ir.ui.view,arch_db:website.layout_footer_copyright
 msgid "Odoo"
-msgstr "Odoo"
+msgstr "医伴"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.s_three_columns
 msgid "Odoo - Sample 1 for three columns"
-msgstr "Odoo - 三列示例 1"
+msgstr "三列 示例1"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.s_three_columns
 msgid "Odoo - Sample 2 for three columns"
-msgstr "Odoo - 三列示例 2"
+msgstr "三列 示例2"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.s_three_columns
 msgid "Odoo - Sample 3 for three columns"
-msgstr "Odoo - 三列示例 3"
+msgstr "三列 示例3"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.s_big_picture

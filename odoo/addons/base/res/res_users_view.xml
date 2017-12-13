@@ -132,17 +132,16 @@
                     <sheet>
                         <field name="id" invisible="1"/>
                         <div class="oe_form_box_info oe_text_center" style="margin-bottom: 10px" attrs="{'invisible': [('id', '>', 0)]}">
-                            You are creating a new user. After saving, the user will receive an invite email containing a link to set its password.
+                            正在创建新用户，保存后用户会收到邀请邮件，根据提示设置密码即可激活
                         </div>
                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium"}'/>
                         <div class="oe_title">
                             <label for="name" class="oe_edit_only"/>
                             <h1><field name="name" required="1"/></h1>
                             <field name="email" invisible="1"/>
-                            <label for="login" class="oe_edit_only" string="Email Address"/>
+                            <label for="login" class="oe_edit_only" string="Email"/>
                             <h2>
-                                <field name="login"
-                                        placeholder="email@yourcompany.com"/>
+                                <field name="login" placeholder="email@yourcompany.com"/>
                             </h2>
                             <label for="company_id" class="oe_edit_only" groups="base.group_multi_company"/>
                             <field name="company_id" context="{'user_preference': 0}" groups="base.group_multi_company"/>
@@ -153,8 +152,8 @@
                             <div attrs="{'invisible': [('id', '>', 0)]}" groups="base.group_no_one">
                                 <field name="groups_id" readonly="1" widget="many2many_tags" style="display: inline;"/> You will be able to define additional access rights by editing the newly created user under the Settings / Users menu.
                             </div>
-                            <field name="phone" widget="phone"/>
                             <field name="mobile" widget="phone"/>
+                            <field name="phone" widget="phone"/>
                             <field name="fax"/>
                         </group>
                     </sheet>
@@ -167,7 +166,7 @@
             <field name="arch" type="xml">
                 <form string="Users">
                     <header>
-                        <button string="Change Password" type="action" name="%(change_password_wizard_action)d" help="Change the user password."/>
+                        <button string="更改密码" type="action" name="%(change_password_wizard_action)d" help="Change the user password."/>
                     </header>
                     <sheet>
                         <field name="id" invisible="1"/>
@@ -178,10 +177,10 @@
                         </div>
                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium"}'/>
                         <div class="oe_title">
-                            <label for="name" class="oe_edit_only"/>
-                            <h1><field name="name" required="1"/></h1>
+                            <label string="姓名" for="name" class="oe_edit_only" />
+                            <h2><field name="name" required="1"/></h2>
                             <field name="email" invisible="1"/>
-                            <label for="login" class="oe_edit_only" string="Email Address"/>
+                            <label string="用户名" for="login" class="oe_edit_only" />
                             <h2><field name="login"/></h2>
                             <group>
                                 <field name="partner_id" readonly="1" required="0" groups="base.group_no_one"
@@ -189,7 +188,7 @@
                             </group>
                         </div>
                         <notebook colspan="4">
-                            <page name="access_rights" string="Access Rights">
+                            <page name="access_rights" string="访问权限">
                                 <group string="Multi Companies" attrs="{'invisible': [('companies_count', '&lt;=', 1)]}">
                                     <field string="Allowed Companies" name="company_ids" widget="many2many_tags"/>
                                     <field string="Current Company" name="company_id" context="{'user_preference': 0}"/>
@@ -197,18 +196,18 @@
                                 </group>
                                 <field name="groups_id"/>
                             </page>
-                            <page string="Preferences">
+                            <page string="参数配置">
                                 <group>
-                                    <group string="Localization" name="preferences">
+                                    <group string="语言" name="preferences">
                                         <field name="lang"/>
                                         <field name="tz" widget="timezone_mismatch" options="{'tz_offset_field': 'tz_offset'}" />
                                         <field name="tz_offset" invisible="1"/>
                                     </group>
-                                    <group string="Menus Customization" groups="base.group_no_one">
+                                    <group string="个性化首页" groups="base.group_no_one">
                                         <field name="action_id"/>
                                     </group>
                                 </group>
-                                <group string="Messaging and Social" name="messaging">
+                                <group string="通知" name="messaging">
                                     <field name="signature"/>
                                 </group>
                             </page>
@@ -288,7 +287,7 @@
                     <h1>
                         <field name="name" readonly="1" class="oe_inline"/>
                     </h1>
-                    <button name="preference_change_password" type="object" string="Change password" class="oe_link"/>
+                    <button name="preference_change_password" type="object" string="更改密码" class="oe_link"/>
                     <group name="preferences" col="4">
                         <field name="lang" readonly="0"/>
                         <field name="tz" widget="timezone_mismatch" options="{'tz_offset_field': 'tz_offset'}" readonly="0"/>
@@ -296,13 +295,13 @@
                         <field name="company_id" options="{'no_create': True}" readonly="0"
                             groups="base.group_multi_company"/>
                     </group>
-                    <group string="Email Preferences">
+                    <group string="Email设置">
                         <field name="email" widget="email" readonly="0"/>
-                        <field name="signature" readonly="0"/>
+                        <field name="signature" string="邮件签名" readonly="0"/>
                     </group>
                     <footer>
-                        <button name="preference_save" type="object" string="Save" class="btn-primary"/>
-                        <button name="preference_cancel" string="Cancel" special="cancel" class="btn-default"/>
+                        <button name="preference_save" type="object" string="保存" class="btn-primary"/>
+                        <button name="preference_cancel" string="取消" special="cancel" class="btn-default"/>
                     </footer>
                 </form>
             </field>

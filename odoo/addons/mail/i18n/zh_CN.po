@@ -3064,7 +3064,7 @@ msgstr "未读消息的数量"
 #. module: mail
 #: model:ir.ui.view,arch_db:mail.message_user_assigned
 msgid "Odoo"
-msgstr "Odoo"
+msgstr "医伴"
 
 #. module: mail
 #. openerp-web
@@ -3079,7 +3079,7 @@ msgstr ""
 #: code:addons/mail/static/src/xml/client_action.xml:11
 #, python-format
 msgid "Odoo needs your permission to"
-msgstr "Odoo需要你的许可进行"
+msgstr "需要你的许可进行"
 
 #. module: mail
 #. openerp-web
