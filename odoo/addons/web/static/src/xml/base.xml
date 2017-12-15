@@ -506,6 +506,7 @@
         <ul t-attf-class="nav nav-tabs #{classnames}" role="tablist">
             <li t-foreach="pages" t-as="page" t-att-modifiers="page.modifiers">
                 <a role="tab" t-attf-href="##{page.id}" t-att-accesskey="page.accesskey" data-toggle="tab" disable_anchor="true">
+                    <span t-if="page.icon" t-att-class="'fa ' + page.icon + ''"/>
                     <t t-esc="page.string"/>
                 </a>
             </li>

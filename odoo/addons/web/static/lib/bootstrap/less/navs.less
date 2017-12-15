@@ -74,19 +74,24 @@
 
 // Give the tabs something to sit on
 .nav-tabs {
-  border-bottom: 1px solid @nav-tabs-border-color;
+  margin-bottom: 0!important;
+  top: 1px;
   > li {
     float: left;
     // Make the list-items overlay the bottom border
-    margin-bottom: -1px;
+    margin-bottom: -2px;
 
     // Actual tabs (as links)
     > a {
-      margin-right: 2px;
+      margin-right: -1px;
       line-height: @line-height-base;
-      border: 1px solid transparent;
-      border-radius: @border-radius-base @border-radius-base 0 0;
+      border: 1px solid @nav-tabs-link-hover-border-color;
+      border-radius: 1px 1px 0 0;
+      color: @nav-tabs-link-color;
+      background-color: @nav-tabs-link-bg;
       &:hover {
+        background-color: #FFF;
+        color: @nav-tabs-link-hover-color;
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
       }
     }
@@ -98,8 +103,9 @@
       &:focus {
         color: @nav-tabs-active-link-hover-color;
         background-color: @nav-tabs-active-link-hover-bg;
-        border: 1px solid @nav-tabs-active-link-hover-border-color;
-        border-bottom-color: transparent;
+        border-color: @nav-tabs-active-link-hover-border-color;
+        box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, .15);
+        border-top: @nav-tabs-active-link-hover-border-top;
         cursor: default;
       }
     }
@@ -138,7 +144,6 @@
   }
 }
 
-
 // Stacked pills
 .nav-stacked {
   > li {
@@ -149,7 +154,6 @@
     }
   }
 }
-
 
 // Nav variations
 // --------------------------------------------------
@@ -207,6 +211,7 @@
       border-bottom: 1px solid @nav-tabs-justified-link-border-color;
       border-radius: @border-radius-base @border-radius-base 0 0;
     }
+
     > .active > a,
     > .active > a:hover,
     > .active > a:focus {
@@ -214,7 +219,6 @@
     }
   }
 }
-
 
 // Tabbable tabs
 // -------------------------
@@ -228,7 +232,6 @@
     display: block;
   }
 }
-
 
 // Dropdowns
 // -------------------------

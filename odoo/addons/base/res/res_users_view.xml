@@ -147,10 +147,10 @@
                             <field name="company_id" context="{'user_preference': 0}" groups="base.group_multi_company"/>
                         </div>
                         <group>
-                            <label for="groups_id" string="Access Rights"
+                            <label for="groups_id" string="访问权限"
                                     attrs="{'invisible': [('id', '>', 0)]}" groups="base.group_no_one"/>
                             <div attrs="{'invisible': [('id', '>', 0)]}" groups="base.group_no_one">
-                                <field name="groups_id" readonly="1" widget="many2many_tags" style="display: inline;"/> You will be able to define additional access rights by editing the newly created user under the Settings / Users menu.
+                                <field name="groups_id" readonly="1" widget="many2many_tags" />
                             </div>
                             <field name="mobile" widget="phone"/>
                             <field name="phone" widget="phone"/>
@@ -237,8 +237,8 @@
                     <field name="name" filter_domain="['|', '|', ('name','ilike',self), ('login','ilike',self), ('email','ilike',self)]" string="User"/>
                     <field name="company_ids" string="Company" groups="base.group_multi_company"/>
                     <field name="share"/>
-                    <filter name="no_share" string="Internal Users" domain="[('share','=',False)]"/>
-                    <filter name="Inactive" string="Inactive Users" domain="[('active','=',False)]"/>
+                    <filter name="no_share" string="内部用户" domain="[('share','=',False)]"/>
+                    <filter name="Inactive" string="禁用用户" domain="[('active','=',False)]"/>
                 </search>
             </field>
         </record>
