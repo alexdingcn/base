@@ -52,6 +52,12 @@ def transfer_field_to_modifiers(field, modifiers):
 # For non-tree views, the context shouldn't be given.
 def transfer_node_to_modifiers(node, modifiers, context=None, in_tree_view=False):
     if node.get('attrs'):
+        if ', uid' in node.get('attrs'):
+            user_id = str(context.get('uid', 0))
+            user_id = ', ' + user_id
+            attrs = node.get('attrs')
+            attrs = attrs.replace(', uid', user_id)
+            node.set('attrs', attrs)
         modifiers.update(safe_eval(node.get('attrs')))
 
     if node.get('states'):

@@ -230,8 +230,8 @@ msgstr "<b>设定自定义图像...</b>"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.show_sign_in
-msgid "<b>Sign in</b>"
-msgstr "<b>登录</b>"
+msgid "Sign in"
+msgstr "登录"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.website_planner
