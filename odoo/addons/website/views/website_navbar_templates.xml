@@ -10,7 +10,7 @@
                 <ul id="oe_applications">
                     <li class="dropdown active">
                         <a class="dropdown full" data-toggle="dropdown" href="#">
-                            <i class="fa fa-th-large"/> WEBSITE <b class="caret"/>
+                            <i class="fa fa-th-large"/> 网站导航 <b class="caret"/>
                         </a>
                         <ul class="dropdown-menu">
                             <li t-as="menu" t-foreach="menu_data['children']">
@@ -33,31 +33,31 @@
                 <ul class="o_menu_sections" groups="website.group_website_designer">
                     <!-- Content -->
                     <li class="dropdown content" t-if="editable">
-                        <a id="content-menu-button" class="dropdown-toggle waves" data-toggle="dropdown" href="#">Content</a>
+                        <a id="content-menu-button" class="dropdown-toggle waves" data-toggle="dropdown" href="#">内容编辑</a>
                         <ul class="dropdown-menu oe_content_menu" role="menu">
                             <li>
-                                <a data-action="edit_menu" href="#" title="Edit Top Menu">Edit Menu</a>
+                                <a data-action="edit_menu" href="#" title="Edit Top Menu">编辑菜单</a>
                             </li>
                             <li t-if="deletable" role="separator" class="divider"></li>
-                            <li t-if="deletable"><a href="#" data-action="rename_page">Rename Page</a></li>
-                            <li t-if="deletable"><a href="#" data-action="delete_page">Delete Page</a></li>
+                            <li t-if="deletable"><a href="#" data-action="rename_page">重命名页面</a></li>
+                            <li t-if="deletable"><a href="#" data-action="delete_page">删除页面</a></li>
                         </ul>
                     </li>
                     <!-- Customize -->
                     <li class="dropdown" id="customize-menu">
-                        <a class="dropdown-toggle waves" data-toggle="dropdown" href="#" id="customize-menu-button">Customize</a>
+                        <a class="dropdown-toggle waves" data-toggle="dropdown" href="#" id="customize-menu-button">个性化订制</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li id="html_editor"><a data-action="ace" href="#advanced-view-editor">HTML Editor</a></li>
-                            <li id="theme_customize"><a href="#">Customize Theme</a></li>
-                            <li id="install_apps"><a href="/web#return_label=Website&amp;action=website.action_module_website">Install Apps</a></li>
+                            <li id="html_editor"><a data-action="ace" href="#advanced-view-editor">HTML编辑器</a></li>
+                            <li id="theme_customize"><a href="#">主题</a></li>
+                            <li id="install_apps"><a href="/web#return_label=Website&amp;action=website.action_module_website">加载Apps</a></li>
                             <li class="divider"/>
                         </ul>
                     </li>
                     <!-- Promote -->
                     <li class="dropdown">
-                        <a class="dropdown-toggle waves" data-toggle="dropdown" href="#" id="promote-menu-button">Promote</a>
+                        <a class="dropdown-toggle waves" data-toggle="dropdown" href="#" id="promote-menu-button">网站优化</a>
                         <ul class="dropdown-menu oe_promote_menu" role="menu">
-                            <li><a data-action="promote-current-page" href="#" title="Promote page on the web">Optimize SEO</a></li>
+                            <li><a data-action="promote-current-page" href="#" title="Promote page on the web">SEO优化</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -89,7 +89,7 @@
             <div groups="website.group_website_publisher" class="modal" id="o_website_add_page_modal">
                 <div class="modal-dialog modal-lg">
                     <ul>
-                        <li groups="website.group_website_designer"><a href="#" data-action="new_page"><i class="fa fa-file-o"/><p>New Page</p></a></li>
+                        <li groups="website.group_website_designer"><a href="#" data-action="new_page"><i class="fa fa-file-o"/><p>新页面</p></a></li>
                     </ul>
                 </div>
             </div>

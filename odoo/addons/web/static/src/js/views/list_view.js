@@ -1789,6 +1789,7 @@ var Column = Class.extend({
      * @private
      */
     _format: function (row_data, options) {
+        console.log(row_data);
         return _.escape(formats.format_value(
             row_data[this.id].value, this, options.value_if_empty));
     }

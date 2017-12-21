@@ -147,12 +147,12 @@
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
-                                <span class="sr-only">Toggle navigation</span>
+                                <span class="sr-only">导航</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="/" t-if="website" t-field="website.name">My Website</a>
+                            <a class="navbar-brand" href="/" t-if="website" t-field="website.name">网站</a>
                         </div>
                         <div class="collapse navbar-collapse navbar-top-collapse">
                             <ul class="nav navbar-nav navbar-right" id="top_menu">
@@ -168,7 +168,7 @@
                                         </b>
                                     </a>
                                     <ul class="dropdown-menu js_usermenu" role="menu">
-                                        <li id="o_logout"><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                                        <li id="o_logout"><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">退出登录</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -201,7 +201,7 @@
         <div class="container mt16 mb8">
             <div class="pull-right" t-ignore="true" t-if="not editable">
                 Create a <a href="http://www.odoo.com/page/website-builder">free website</a> with
-                <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>
+                <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Yiban</a>
             </div>
             <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
                 Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>
@@ -232,7 +232,7 @@
         <li class="divider" groups="base.group_public"/>
         <li groups="base.group_public">
             <a t-attf-href="/web/login">
-                <b>Sign in</b>
+                <b>登录</b>
             </a>
         </li>
     </xpath>
@@ -296,15 +296,17 @@
         <div id="footer" class="container hidden-print">
             <div class="row">
                 <div class="col-md-4 col-lg-3">
-                    <h4>Our Products &amp; Services</h4>
+                    <h4>产品服务</h4>
                     <ul class="list-unstyled" id="products">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/">首页</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4  col-lg-3" id="info">
-                    <h4>Connect with us</h4>
+                    <h4>联系信息</h4>
                     <ul class="list-unstyled">
-                        <li><a href="/page/website.contactus">Contact us</a></li>
+                        <li><a href="/page/website.contactus">上海</a></li>
+                        <li><a href="/page/website.contactus">西安</a></li>
+                        <li><a href="/page/website.contactus">重庆</a></li>
                     </ul>
                     <ul class="list-unstyled">
                         <li t-ignore="true"><i class="fa fa-phone"></i> <span t-field="res_company.phone"></span></li>
@@ -322,20 +324,13 @@
                 <div class="col-md-4 col-lg-5 col-lg-offset-1">
                     <h4>
                         <span t-field="res_company.name" />
-                        <small> - <a href="/page/website.aboutus">About us</a></small>
+                        <small> - <a href="/page/website.aboutus">关于我们</a></small>
                     </h4>
                     <div>
                         <p>
-                            We are a team of passionate people whose goal is to improve everyone's
-                            life through disruptive products. We build great products to solve your
-                            business problems.
-                        </p>
-                        <p>
-                            Our products are designed for small to medium size companies willing to optimize
-                            their performance.
+                            医疗全产业链金融专家
                         </p>
                     </div>
-                    <t t-call="website.language_selector"/>
                 </div>
             </div>
         </div>
