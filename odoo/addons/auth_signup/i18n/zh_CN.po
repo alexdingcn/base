@@ -86,7 +86,7 @@ msgstr ""
 #. module: auth_signup
 #: model:mail.template,subject:auth_signup.set_password_email
 msgid "${object.company_id.name} invitation to connect on Odoo"
-msgstr "${object.company_id.name} 邀请链接到Odoo"
+msgstr "${object.company_id.name} 邀请您的加入"
 
 #. module: auth_signup
 #: model:ir.ui.view,arch_db:auth_signup.res_users_form_view
