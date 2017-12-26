@@ -438,10 +438,10 @@ class BaseModel(object):
             compute='_compute_display_name'))
 
         if self._log_access:
-            add('create_uid', fields.Many2one('res.users', string='Created by', automatic=True))
-            add('create_date', fields.Datetime(string='Created on', automatic=True))
-            add('write_uid', fields.Many2one('res.users', string='Last Updated by', automatic=True))
-            add('write_date', fields.Datetime(string='Last Updated on', automatic=True))
+            add('create_uid', fields.Many2one('res.users', string=u'填表人', automatic=True))
+            add('create_date', fields.Datetime(string=u'创建时间', automatic=True))
+            add('write_uid', fields.Many2one('res.users', string=u'修改者', automatic=True))
+            add('write_date', fields.Datetime(string=u'修改时间', automatic=True))
             last_modified_name = 'compute_concurrency_field_with_access'
         else:
             last_modified_name = 'compute_concurrency_field'

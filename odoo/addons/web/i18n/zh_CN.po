@@ -2403,7 +2403,7 @@ msgstr "是"
 #: code:addons/web/static/src/js/abstract_web_client.js:217
 #, python-format
 msgid "You are back online"
-msgstr "你回来在线"
+msgstr "重新连接成功"
 
 #. module: web
 #. openerp-web
