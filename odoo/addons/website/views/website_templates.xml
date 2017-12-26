@@ -200,7 +200,7 @@
     <xpath expr="//footer" position="inside">
         <div class="container mt16 mb8">
             <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
-                <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备17130448号-1</a>
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备17130448号-1</a><br/>
                 Copyright &amp;copy; 2017 <span t-field="res_company.name" itemprop="name">医伴金服</span>
             </div>
         </div>
