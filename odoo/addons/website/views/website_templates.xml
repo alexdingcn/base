@@ -199,12 +199,8 @@
 <template id="layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright">
     <xpath expr="//footer" position="inside">
         <div class="container mt16 mb8">
-            <div class="pull-right" t-ignore="true" t-if="not editable">
-                Create a <a href="http://www.odoo.com/page/website-builder">free website</a> with
-                <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Yiban</a>
-            </div>
             <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
-                Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>
+                Copyright &amp;copy; 2017 <span t-field="res_company.name" itemprop="name">医伴金服</span>
             </div>
         </div>
     </xpath>
@@ -837,7 +833,7 @@ Sitemap: <t t-esc="url_root"/>sitemap.xml
     </t>
 </template>
 
-<template id="contactus" name="Contact us" page="True">
+<template id="contactus" name="联系我们" page="True">
     <t t-call="website.layout">
       <div id="wrap">
         <div class="oe_structure"/>
@@ -847,12 +843,12 @@ Sitemap: <t t-esc="url_root"/>sitemap.xml
                 <div class="col-md-8">
                     <div class="oe_structure">
                         <div>
-                            <p>Contact us about anything related to our company or services.</p>
-                            <p>We'll do our best to get back to you as soon as possible.</p>
+                            <p>任何有关我们公司或服务的问题请联系我们</p>
+                            <p>我们将尽快回复您.</p>
                         </div>
                     </div>
                     <div class="text-center mt64" name="mail_button">
-                        <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">Send us an email</a>
+                        <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">发邮件</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb32">
