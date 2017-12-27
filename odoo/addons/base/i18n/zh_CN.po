@@ -11298,7 +11298,7 @@ msgstr "工时单的网格视图"
 #: model:ir.ui.view,arch_db:base.ir_access_view_search
 #: model:ir.ui.view,arch_db:base.view_groups_search
 msgid "Group"
-msgstr "群组"
+msgstr "用户组"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.act_report_xml_search_view
@@ -11355,7 +11355,7 @@ msgstr "组名"
 #: model:ir.ui.view,arch_db:base.view_groups_form
 #: model:ir.ui.view,arch_db:base.view_groups_search
 msgid "Groups"
-msgstr "群组"
+msgstr "用户组"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
@@ -13008,7 +13008,7 @@ msgstr "最新版本"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_login_date
 msgid "Latest connection"
-msgstr "最后连接"
+msgstr "最后登录时间"
 
 #. module: base
 #: model:res.country,name:base.lv

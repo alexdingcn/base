@@ -4,68 +4,55 @@
             <field name="name">General Settings</field>
             <field name="model">base.config.settings</field>
             <field name="arch" type="xml">
-                <form string="General Settings" class="oe_form_configuration">
+                <form string="通用设置" class="oe_form_configuration">
                     <header>
-                        <button string="Apply" type="object" name="execute" class="oe_highlight"/>
-                        <button string="Cancel" type="object" name="cancel" class="oe_link" special="cancel"/>
+                        <button string="应用" type="object" name="execute" class="oe_highlight"/>
+                        <button string="取消" type="object" name="cancel" class="oe_link" special="cancel"/>
                     </header>
-                    <separator string="General Settings"/>
-                    <div>
-                        <label string="You will find more options in your company details: address for the header and footer, overdue payments texts, etc."/>
-                        <button type="object" name="open_company" string="Configure your company data" icon="fa-cogs" class="oe_inline oe_link"/>
-                        <field name="company_id" invisible="1"/>
-                    </div>
+                    <separator string="通用设置"/>
                     <group>
-                        <label for="id" string="Email" name="email_label"/>
+                        <label string="公司资料"/>
+                        <button type="object" name="open_company" string="配置公司资料" icon="fa-cogs" class="oe_inline oe_link"/>
+                        <field name="company_id" invisible="1"/>
+
+                        <label for="id" string="Email设定" name="email_label"/>
                         <div name="email">
                             <div name="email.outgoing_server">
-                                <button type="action"
-                                    name="%(base.action_ir_mail_server_list)d"
-                                    string="Configure outgoing email servers" class="oe_link"/>
+                                <button type="action" name="%(base.action_ir_mail_server_list)d"
+                                    string="邮件服务器" class="oe_link"/>
                             </div>
                         </div>
-                    </group>
-                    <group>
-                        <label for="id" string="Portal access"/>
+
+                        <label for="id" string="网站"/>
                         <div>
                             <div>
                                 <field name="module_portal" class="oe_inline"/>
                                 <label for="module_portal"/>
-                                <p>
-                                    When you send a document to a customer
-                                    (quotation, invoice), your customer will be
-                                    able to signup to get all his documents,
-                                    read your company news, check his projects,
-                                    etc.
-                                </p>
+                                <p>发给客户报价单、发票的同时，客户会收到一封邀请信</p>
                             </div>
                         </div>
-                    </group>
-                    <group name="authentication">
-                        <label for="id" string="Authentication"/>
+
+                        <label for="id" string="登录认证"/>
                         <div>
                             <div>
                                 <field name="module_auth_oauth"/>
                                 <label for="module_auth_oauth"/>
                             </div>
                         </div>
-                    </group>
-                    <group>
-                        <label for="id" string="Import / Export"/>
+
+                        <label for="id" string="导入/导出"/>
                         <div>
                             <field name="module_base_import" class="oe_inline"/>
                             <label for="module_base_import"/>
                         </div>
-                    </group>
-                    <group>
-                        <label for="id" string="Multi Company"/>
+
+                        <label for="id" string="多公司"/>
                         <div name="group_multi_company">
                             <field name="group_multi_company" class="oe_inline"/>
                             <label for="group_multi_company"/>
                         </div>
-                    </group>
-                    <group>
-                        <label for="id" string="Multi Currencies"/>
+
+                        <label for="id" string="币种"/>
                         <div name="group_multi_currency">
                             <field name="group_multi_currency" class="oe_inline"/>
                             <label for="group_multi_currency"/>
@@ -84,33 +71,10 @@
                         <field name="company_share_partner" class="oe_inline" />
                     </group>
                     <div>
-                        <label string="New users access rights"/>
-                        <button type="object" name="open_default_user" string="Edit default access rights for new users" class="oe_inline oe_link" icon="fa-cogs"/>
+                        <label string="新用户访问权限"/>
+                        <button type="object" name="open_default_user" string="设置新用户默认权限" class="oe_inline oe_link" icon="fa-cogs"/>
                     </div>
-                    <group string="Google Integration" name="google">
-                        <label for="id" string="Google Drive"/>
-                        <div name="google_drive">
-                            <div name="module_google_drive">
-                                <field name="module_google_drive" class="oe_inline"/>
-                                <label for="module_google_drive"/>
-                            </div>
-                        </div>
-                    </group>
-                    <group name="google_analytics">
-                        <label for="id" string="Google Calendar"/>
-                        <div name="google_calendar">
-                            <div name="module_google_calendar">
-                                <field name="module_google_calendar" class="oe_inline"/>
-                                <label for="module_google_calendar"/>
-                                <div name="google_calendar_config_description" attrs="{'invisible': [('module_google_calendar','=',False)]}">
-                                    <p>
-                                        Once installed, you can configure your API credentials for "Google calendar"
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </group>
-                    <group string="Report Configuration" name="report">
+                    <group string="报表" name="report">
                         <label for="custom_footer"/>
                         <div>
                             <field name="custom_footer" class="oe_inline"/>                                
@@ -124,8 +88,8 @@
                             <field name="rml_footer_readonly" class="oe_inline"/>                                
                         </div>
                     </group>
-                    <group string="RML Report Configuration" groups="base.group_no_one">
-                        <button name="%(base.preview_rml_report)d" string="Preview RML Report" type="action" colspan="2"/>
+                    <group string="RML报表" groups="base.group_no_one">
+                        <button name="%(base.preview_rml_report)d" string="预览RML报表" type="action" colspan="2"/>
                         <label for="rml_paper_format"/>
                         <div>
                             <field name="rml_paper_format" class="oe_inline"/>                                
@@ -133,7 +97,7 @@
                         <label for="font"/>
                         <div>
                             <field name="font" class="oe_inline"/>
-                            <button string="(reload fonts)" name="act_discover_fonts" type="object" class="oe_link"/>
+                            <button string="(刷新字体)" name="act_discover_fonts" type="object" class="oe_link"/>
                         </div>
                         <label for="rml_header"/>
                         <div>
@@ -149,7 +113,7 @@
                         </div>
                     </group>
                     <div name="company_dependent_settings_message">
-                        <span>(*) This configuration is related to the company you're logged into.</span>
+                        <span>(*) 配置依赖于登录的公司</span>
                     </div>
                 </form>
             </field>

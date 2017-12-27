@@ -337,7 +337,7 @@ msgstr "需要安装inter_company_rules。当其中的一个公司卖给其它�
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_base_config_settings_module_auth_oauth
 msgid "Use external authentication providers (OAuth)"
-msgstr "使用外部验证提供者 (OAuth)"
+msgstr "使用外部OAuth验证提供者"
 
 #. module: base_setup
 #: model:ir.ui.view,arch_db:base_setup.view_general_configuration

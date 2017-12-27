@@ -11,8 +11,8 @@
                         context="{'search_default_exception': 1, 'search_default_outgoing': 0}"
                         attrs="{'invisible': [('fail_counter','=',0)]}">
                         <span> -- </span>
-                        <i class="fa fa-exclamation-triangle"></i> <field class="oe_inline" name="fail_counter"/>
-                        <span>failed emails</span>
+                        <i class="fa fa-exclamation-triangle red"></i> <field class="oe_inline" name="fail_counter"/>
+                         <span>发送失败</span>
                     </button>
                 </xpath>
                 <xpath expr="//div[@name='email']" position='inside'>

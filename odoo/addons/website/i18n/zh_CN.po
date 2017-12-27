@@ -2829,7 +2829,7 @@ msgstr "重置模板"
 #. module: website
 #: model:res.groups,name:website.group_website_publisher
 msgid "Restricted Editor"
-msgstr ""
+msgstr "网站编辑"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.snippet_options

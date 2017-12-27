@@ -10,11 +10,11 @@
                     <label for="paperformat_id"/>
                     <div>
                         <field name="paperformat_id" class="oe_inline" required="1"/>
-                        <button name="%(action_report_internalpreview)d" string="Preview Internal Report" type="action"/>
-                        <button name="%(action_report_externalpreview)d" string="Preview External Report" type="action"/>
-                        <button name="edit_external_header" string="Edit external header" type="object" class="oe_link"/>
-                        <button name="edit_external_footer" string="Edit external footer" type="object" class="oe_link"/>
-                        <button name="edit_internal_header" string="Edit internal header" type="object" class="oe_link"/>
+                        <button name="%(action_report_internalpreview)d" string="预览对内报表" type="action"/>
+                        <button name="%(action_report_externalpreview)d" string="预览对外报表" type="action"/>
+                        <button name="edit_external_header" string="编辑对外报表页眉" type="object" class="oe_link"/>
+                        <button name="edit_external_footer" string="编辑对外报表页脚" type="object" class="oe_link"/>
+                        <button name="edit_internal_header" string="编辑对内报表页眉" type="object" class="oe_link"/>
                     </div>
                 </group>
             </data>

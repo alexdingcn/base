@@ -150,7 +150,7 @@ msgstr "确认密码"
 #. module: auth_signup
 #: selection:res.users,state:0
 msgid "Confirmed"
-msgstr "已确认"
+msgstr "已激活"
 
 #. module: auth_signup
 #: code:addons/auth_signup/controllers/main.py:41
@@ -183,7 +183,7 @@ msgstr "无效的注册令牌"
 #. module: auth_signup
 #: selection:res.users,state:0
 msgid "Never Connected"
-msgstr "从未连接"
+msgstr "从未登录"
 
 #. module: auth_signup
 #: model:ir.model,name:auth_signup.model_res_partner

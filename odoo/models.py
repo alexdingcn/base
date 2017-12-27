@@ -5607,7 +5607,7 @@ AbstractModel = BaseModel
 class Model(AbstractModel):
     """ Main super-class for regular database-persisted Odoo models.
 
-    Odoo models are created by inheriting from this class::
+    Models are created by inheriting from this class::
 
         class user(Model):
             ...
