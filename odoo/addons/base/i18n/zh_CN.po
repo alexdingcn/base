@@ -12341,7 +12341,7 @@ msgstr "内部来源"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_search
 msgid "Internal Users"
-msgstr "内部用户"
+msgstr "员工"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
