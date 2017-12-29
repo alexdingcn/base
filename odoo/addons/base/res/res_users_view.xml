@@ -177,11 +177,12 @@
                         </div>
                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium"}'/>
                         <div class="oe_title">
-                            <label string="姓名" for="name" class="oe_edit_only" />
-                            <h2><field name="name" required="1"/></h2>
-                            <field name="email" invisible="1"/>
-                            <label string="登录名" for="login" class="oe_edit_only" />
-                            <h2><field name="login"/></h2>
+                            <group>
+                                <field name="name" required="1"/>
+                                <field string="登录名" name="login" required="1"/>
+                                <field name="email"/>
+                                <field name="mobile" required="1"/>
+                            </group>
                             <group>
                                 <field name="partner_id" readonly="1" required="0" groups="base.group_no_one"
                                         attrs="{'invisible': [('id', '=', False)]}"/>
@@ -189,10 +190,10 @@
                         </div>
                         <notebook colspan="4">
                             <page name="access_rights" string="访问权限">
-                                <group string="Multi Companies" attrs="{'invisible': [('companies_count', '&lt;=', 1)]}">
-                                    <field string="Allowed Companies" name="company_ids" widget="many2many_tags"/>
-                                    <field string="Current Company" name="company_id" context="{'user_preference': 0}"/>
-                                    <field string="Companies count" name="companies_count" invisible="1"/>
+                                <group string="多公司管理" attrs="{'invisible': [('companies_count', '&lt;=', 1)]}">
+                                    <field string="允许多公司" name="company_ids" widget="many2many_tags"/>
+                                    <field string="当前公司" name="company_id" context="{'user_preference': 0}"/>
+                                    <field string="公司数" name="companies_count" invisible="1"/>
                                 </group>
                                 <field name="groups_id"/>
                             </page>

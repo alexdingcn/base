@@ -38,7 +38,7 @@
 </t>
 
 <t t-name="KanbanView.LoadMore">
-    <a href="#">Load more... (<t t-esc="widget.remaining"/> remaining)</a>
+    <a href="#">更多... (还有<t t-esc="widget.remaining"/>项)</a>
 </t>
 
 <t t-name="KanbanView.ColumnQuickCreate">

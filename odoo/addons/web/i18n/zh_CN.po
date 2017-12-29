@@ -2184,7 +2184,7 @@ msgstr "未定义的"
 #: code:addons/web/static/src/xml/base.xml:614
 #, python-format
 msgid "Unhandled widget"
-msgstr "未处理的挂件"
+msgstr "未处理的组件"
 
 #. module: web
 #. openerp-web
@@ -2354,14 +2354,14 @@ msgstr "周"
 #: code:addons/web/static/src/js/views/form_view.js:1274
 #, python-format
 msgid "Widget type '%s' is not implemented"
-msgstr "挂件类型 '%s' 尚未实现"
+msgstr "组件类型 '%s' 尚未实现"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/xml/base_common.xml:51
 #, python-format
 msgid "Widget:"
-msgstr "挂件:"
+msgstr "组件:"
 
 #. module: web
 #: code:addons/web/controllers/main.py:474

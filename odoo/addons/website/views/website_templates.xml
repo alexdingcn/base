@@ -226,8 +226,8 @@
 
 <template id="show_sign_in" customize_show="True" inherit_id="website.layout" name="Show Sign In">
     <xpath expr="//ul[@id='top_menu']" position="inside">
-        <li class="divider" groups="base.group_public"/>
-        <li groups="base.group_public">
+        <li class="divider" groups="base.group_public" t-ignore="true" t-if="website.user_id.login == 'public'"/>
+        <li groups="base.group_public" t-ignore="true" t-if="website.user_id.login == 'public'">
             <a t-attf-href="/web/login">
                 <b>登录</b>
             </a>
@@ -338,8 +338,8 @@
 <template id="publish_management">
     <div groups="website.group_website_publisher" t-ignore="true" class="pull-right css_editable_mode_hidden" t-att-style="style or None">
         <div t-attf-class="btn-group js_publish_management #{object.website_published and 'css_published' or 'css_unpublished'}" t-att-data-id="object.id" t-att-data-object="object._name" t-att-data-controller="publish_controller">
-            <button class="btn btn-danger js_publish_btn">Unpublished</button>
-            <button class="btn btn-success js_publish_btn">Published</button>
+            <button class="btn btn-danger js_publish_btn">下架</button>
+            <button class="btn btn-success js_publish_btn">上架</button>
             <button type="button" t-attf-class="btn btn-default dropdown-toggle" t-att-id="'dopprod-%s' % object.id" data-toggle="dropdown">
                 <span class="caret"></span>
             </button>
@@ -357,8 +357,8 @@
 <template id="publish_short">
     <t groups="website.group_website_publisher" t-ignore="true">
         <div t-attf-class="pull-right js_publish_management #{object.website_published and 'css_published' or 'css_unpublished'}" t-att-data-id="object.id" t-att-data-object="object._name" t-att-data-controller="publish_controller">
-            <button class="btn btn-danger js_publish_btn">Unpublished</button>
-            <button class="btn btn-success js_publish_btn">Published</button>
+            <button class="btn btn-danger js_publish_btn">下架</button>
+            <button class="btn btn-success js_publish_btn">上架</button>
         </div>
     </t>
 </template>
@@ -467,7 +467,7 @@
 </template>
 
 <!-- Error and special pages -->
-<template id="website_info" name="Odoo Information">
+<template id="website_info" name="Information">
     <t t-call="website.layout">
         <div id="wrap"/>
     </t>
@@ -839,7 +839,7 @@ Sitemap: <t t-esc="url_root"/>sitemap.xml
       <div id="wrap">
         <div class="oe_structure"/>
         <div class="container">
-            <h1>Contact us</h1>
+            <h1>联系我们</h1>
             <div class="row">
                 <div class="col-md-8">
                     <div class="oe_structure">
@@ -871,7 +871,7 @@ Sitemap: <t t-esc="url_root"/>sitemap.xml
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="text-center">About us</h1>
+                                <h1 class="text-center">关于我们</h1>
                                 <h3 class="text-muted text-center">Great products for great people</h3>
                             </div>
                         </div>

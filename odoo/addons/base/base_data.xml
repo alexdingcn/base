@@ -90,12 +90,12 @@ Administrator</span>]]></field>
         </record>
 
         <record id="public_partner" model="res.partner">
-            <field name="name">Public user</field>
+            <field name="name">未注册用户</field>
             <field name="active" eval="False"/>
         </record>
         
         <record id="public_user" model="res.users">
-            <field name="name">Public user</field>
+            <field name="name">未注册用户</field>
             <field name="login">public</field>
             <field name="password"></field>
             <!-- Avoid auto-including this demo user in any default group -->

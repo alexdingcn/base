@@ -443,13 +443,15 @@ class Users(models.Model):
 
     @classmethod
     def _login(cls, db, login, password):
-        if not password:
+        if not password or not login:
             return False
         user_id = False
         try:
             with cls.pool.cursor() as cr:
                 self = api.Environment(cr, SUPERUSER_ID, {})[cls._name]
                 user = self.search([('login', '=', login)])
+                if not user and login.isdigit():
+                    user = self.search([('mobile', '=', login)])
                 if user:
                     user_id = user.id
                     user.sudo(user_id).check_credentials(password)

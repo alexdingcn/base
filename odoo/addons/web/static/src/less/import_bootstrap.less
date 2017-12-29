@@ -1,1 +1,30 @@
 @import "bootstrap";
+
+// ------------------------------------------------------------------
+// LoginPage
+// ------------------------------------------------------------------
+.oe_website_login_container {
+    background: #01A4FF url('../img/login_bg.jpg') no-repeat;
+    height: 480px;
+
+    .login-wrap {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        @media only screen and (min-device-width: @screen-xs-min) {
+            .login-box {
+                position: absolute;
+                top: 47px;
+                right: 43px;
+                width: 362px;
+                min-height: 150px;
+                background-color: #fff;
+                border: 1px solid #e7e7e7;
+                box-shadow: 0 0 10px rgba(3, 113, 129, 0.75);
+                overflow: hidden;
+            }
+        }
+    }
+}

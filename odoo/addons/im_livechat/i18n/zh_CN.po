@@ -379,7 +379,7 @@ msgstr "请问有什么可以帮到你？"
 #. module: im_livechat
 #: model:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
 msgid "How to use the Website Live Chat widget?"
-msgstr "如何使用网站在线交谈挂件?"
+msgstr "如何使用网站在线交谈组件?"
 
 #. module: im_livechat
 #. openerp-web

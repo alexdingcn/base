@@ -3564,7 +3564,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Odoo Web编辑器挂件\n"
+"Web编辑器组件\n"
 "==========================\n"
 
 #. module: base
@@ -6572,7 +6572,7 @@ msgstr "具有仿真方法的模块"
 #: code:addons/base/ir/ir_qweb/fields.py:377
 #, python-format
 msgid "A unit must be provided to duration widgets"
-msgstr "必须提供一个单位给时长挂件"
+msgstr "必须提供一个单位给时间组件"
 
 #. module: base
 #: selection:res.company,rml_paper_format:0
@@ -11127,7 +11127,7 @@ msgstr "休假仪表板的甘特视图"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_kanban_gauge
 msgid "Gauge Widget for Kanban"
-msgstr "看板的测量挂件"
+msgstr "看板的测量组件"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
