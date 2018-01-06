@@ -1,7 +1,7 @@
 {
     'name': 'Base import',
     'description': """
-New extensible file import for Odoo
+New extensible file import
 ======================================
 
 Re-implement openerp's file import system:

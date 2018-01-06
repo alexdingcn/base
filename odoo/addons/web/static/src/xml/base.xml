@@ -209,6 +209,7 @@
     <t t-foreach="widget.sections" t-as="section">
         <div class="btn-group o_dropdown">
             <button t-if="section.name != 'buttons'" class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                <span t-if="section.icon" t-att-class="'fa ' + section.icon + ''"/>
                 <t t-if="section.name == 'files'" t-raw="widget.items[section.name].length || ''"/>
                 <t t-esc="section.label"/> <span class="caret"/>
             </button>
