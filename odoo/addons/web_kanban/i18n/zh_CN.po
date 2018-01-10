@@ -120,14 +120,14 @@ msgstr "编辑列"
 #: code:addons/web_kanban/static/src/xml/web_kanban.xml:21
 #, python-format
 msgid "Edit Stage"
-msgstr "编辑阶段"
+msgstr "编辑组"
 
 #. module: web_kanban
 #. openerp-web
 #: code:addons/web_kanban/static/src/xml/web_kanban.xml:19
 #, python-format
 msgid "Fold"
-msgstr "收拢"
+msgstr "折叠"
 
 #. module: web_kanban
 #. openerp-web
