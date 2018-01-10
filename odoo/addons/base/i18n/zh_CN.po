@@ -16278,7 +16278,7 @@ msgstr "计划、促销和销售活动"
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_cron_view_search
 msgid "Scheduled Action"
-msgstr "安排的动作"
+msgstr "计划任务"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.ir_cron_act
@@ -16288,7 +16288,7 @@ msgstr "安排的动作"
 #: model:ir.ui.view,arch_db:base.ir_cron_view_search
 #: model:ir.ui.view,arch_db:base.ir_cron_view_tree
 msgid "Scheduled Actions"
-msgstr "安排的动作"
+msgstr "计划任务"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_screen

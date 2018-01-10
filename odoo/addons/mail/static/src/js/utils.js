@@ -13,9 +13,9 @@ function send_notification(title, content) {
         }
     } else {
         web_client.do_notify(title, content);
-        if (bus.is_master) {
-            _beep();
-        }
+        // if (bus.is_master) {
+        //     _beep();
+        // }
     }
 }
 function _send_native_notification(title, content) {
