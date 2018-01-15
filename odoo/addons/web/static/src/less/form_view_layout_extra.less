@@ -1,6 +1,6 @@
 @sheet-max-width: 860px;
 @sheet-min-width: 650px;
-@sheet-padding: 16px;
+@sheet-padding: 10px;
 
 .o_form_view {
     &.o_form_nosheet {
@@ -17,7 +17,7 @@
             max-width: @sheet-max-width;
             min-height: 330px;
             background: white;
-            padding: 16px;
+            padding: 0 16px;
             margin: 0 auto;
             .ui-tabs {
                 margin: 0 -16px;
@@ -92,7 +92,7 @@
     // Groups
     .o_group {
         .o_td_label + td {
-            padding: 2px 36px 2px 8px;
+            padding: 1px 36px 1px 8px;
         }
         .o_form_field.o_text_overflow {
             width: 1px!important; // hack to make the table layout believe it is a small element (so that the table does not grow too much) ...
