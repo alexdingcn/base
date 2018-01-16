@@ -53,6 +53,7 @@ var ListView = View.extend({
         // whether the view rows can be reordered (via vertical drag & drop)
         reorderable: true,
         action_buttons: true,
+        show_index: false,
         //whether the editable property of the view has to be disabled
         disable_editable_mode: false,
     }),
@@ -134,6 +135,7 @@ var ListView = View.extend({
         }
 
         this.options.deletable = this.options.deletable && this.is_action_enabled('delete');
+        this.options.show_index = this.options.show_index || this.fields_view.arch.attrs.show_index;
         this.name = "" + this.fields_view.arch.attrs.string;
 
         // the view's number of records per page (|| section)
@@ -1204,6 +1206,7 @@ ListView.List = Class.extend({
         return QWeb.render('ListView.row', {
             columns: this.columns,
             options: this.options,
+            index: index + 1,
             record: record,
             row_parity: (index % 2 === 0) ? 'even' : 'odd',
             view: this.view,
