@@ -1106,6 +1106,7 @@ var One2ManyListView = X2ManyListView.extend({
             }).open();
         }
     },
+
     do_activate_record: function(index, id) {
         var self = this;
         new common.FormViewDialog(self, {
