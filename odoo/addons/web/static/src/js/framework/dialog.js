@@ -120,6 +120,7 @@ var Dialog = Widget.extend({
         var self = this;
         this.replace(this.$modal.find(".modal-body")).then(function() {
             self.$modal.modal('show');
+            self.$modal.draggable({handle: ".modal-header"});
             self._opened.resolve();
         });
 
@@ -127,6 +128,9 @@ var Dialog = Widget.extend({
     },
 
     close: function() {
+        if(this.$modal.draggable("instance")) {
+            this.$modal.draggable("destroy");
+        }
         this.$modal.modal('hide');
     },
 

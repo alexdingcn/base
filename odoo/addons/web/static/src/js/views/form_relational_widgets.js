@@ -153,7 +153,7 @@ var FieldMany2One = common.AbstractField.extend(common.CompletionFieldMixin, com
                     context: self.build_context(),
                     title: _t("Open: ") + self.string,
                     view_id: view_id,
-                    readonly: !self.can_write
+                    readonly: !self.can_write || (self.options && self.options.no_edit)
                 }).open();
                 pop.on('write_completed', self, function(){
                     self.display_value = {};

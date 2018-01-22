@@ -286,15 +286,15 @@
                     <h1>
                         <field name="name" readonly="1" class="oe_inline"/>
                     </h1>
-                    <button name="preference_change_password" type="object" string="更改密码" class="oe_link"/>
-                    <group name="preferences" col="4">
-                        <field name="lang" readonly="0"/>
-                        <field name="tz" widget="timezone_mismatch" options="{'tz_offset_field': 'tz_offset'}" readonly="0"/>
-                        <field name="tz_offset" invisible="1"/>
-                        <field name="company_id" options="{'no_create': True}" readonly="0"
-                            groups="base.group_multi_company"/>
-                    </group>
-                    <group string="Email设置">
+                    <button name="preference_change_password" type="object" string="更改密码" class="btn-primary"/>
+                    <!--<group name="preferences" col="4">-->
+                        <!--<field name="lang" readonly="0"/>-->
+                        <!--<field name="tz" widget="timezone_mismatch" options="{'tz_offset_field': 'tz_offset'}" readonly="0"/>-->
+                        <!--<field name="tz_offset" invisible="1"/>-->
+                        <!--<field name="company_id" options="{'no_create': True}" readonly="0"-->
+                            <!--groups="base.group_multi_company"/>-->
+                    <!--</group>-->
+                    <group string="通知">
                         <field name="email" widget="email" readonly="0"/>
                         <field name="signature" string="邮件签名" readonly="0"/>
                     </group>
@@ -312,6 +312,7 @@
             <field name="target">new</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
+            <field name="context">{'dialog_size': 'medium'}</field>
         </record>
         <record id="action_res_users_my_view2" model="ir.actions.act_window.view">
             <field eval="10" name="sequence"/>
