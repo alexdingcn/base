@@ -231,7 +231,7 @@
                     <t t-raw="0"/>
                     <div class="text-center" t-if="not disable_footer">
                         <t t-if="not disable_database_manager">
-                            <a class="" href="/web/database/manager">Manage Databases</a> |
+                            <a class="" href="/web/database/manager">管理账套</a>
                         </t>
                     </div>
                 </div>
