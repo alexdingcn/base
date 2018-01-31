@@ -181,8 +181,8 @@ odoo.define('web.form_common', function (require) {
         init: function () {
             this.limit = 7;
             this.orderer = new utils.DropMisordered();
-            this.can_create = this.node.attrs.can_create == "false" ? false : true;
-            this.can_write = this.node.attrs.can_write == "false" ? false : true;
+            this.can_create = this.node.attrs.can_create !== "false";
+            this.can_write = this.node.attrs.can_write !== "false";
         },
         /**
          * Call this method to search using a string.

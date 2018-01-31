@@ -315,6 +315,8 @@ var FieldMany2One = common.AbstractField.extend(common.CompletionFieldMixin, com
             this.display_string(null);
             return;
         }
+        core.bus.trigger('dropdown_selected', this.name, this.get("value"));
+
         var display = this.display_value["" + this.get("value")];
         if (display) {
             this.display_string(display);
